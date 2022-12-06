@@ -8,6 +8,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Genre from './components/Genre';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 // import {BrowserRouter as Router,Routes} from './BrowserRouter';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   // const likes = 50;
   return (
     <div className="App">
+      <Navbar/>
        <Routes>
         <Route path='/' index element={<Home />} />
         <Route path='/books' element={<Book />}>
