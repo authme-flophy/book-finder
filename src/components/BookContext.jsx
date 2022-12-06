@@ -2,9 +2,9 @@
 // import React, { createContext, useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
-// // const BookContext = createContext({});
+//  const BookContext = createContext({});
 
-// const apiUrl = "https://maktafri-api.herokuapp.com/books";
+// // Const api url
 
 // function BookProvider({ children }) {
 //   const navigate = useNavigate();
@@ -15,8 +15,8 @@
 //   const [bookId, setBookId] = useState(1);
 //   const [trigger, setTrigger] = useState(false);
 //   const [book, setBook] = useState({
-//     title: "Purple Hibiscus",
-//     category: "Crime",
+//     title: "",
+//     category: "",
 //     description: "",
 //     image_url: "",
 //     author: "",
@@ -109,8 +109,8 @@
 
 //     console.log("This change has been made");
 //     setBook({
-//       title: "Purple Hibiscus",
-//       category: "Crime",
+//       title: "",
+//       category: "",
 //       description: "",
 //       image_url: "",
 //       author: "",
