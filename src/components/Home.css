@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  height: 80vh;
+  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.header_section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 9rem;
+}
+
+.home_header {
+  text-align: right;
+  font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+  font-size: 5rem;
+  margin-right: 2.5rem;
+  width: 40%;
+}
+
+.button_section {
+  display: flex;
+  margin-right: 2.5rem;
+  justify-content: flex-end;
+}
+
+.button {
+  border: 1px solid #F5F5F5;
+box-shadow: 5px 11px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+font-size: 2rem;
+
+font-family: 'Josefin Slab', serif;
+font-weight: 700;
+padding: .5rem 1.5rem;
+margin: 1rem .5rem;
+}
+
