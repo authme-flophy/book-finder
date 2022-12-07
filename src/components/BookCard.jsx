@@ -1,9 +1,9 @@
 function BookCard() {
-    return ( 
-        <div className="book_card">
-            <h1>BookCard</h1>
-        </div>
-     );
+  return ( 
+      <div className="home">
+          <h1>Books</h1>
+      </div>
+   );
 }
 
 export default BookCard;
