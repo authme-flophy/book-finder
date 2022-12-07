@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#signup_form {
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#name, #username, #email, #password {
+  border-radius: 22px;
+  border: 3px solid #F2D3C1;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  font-family: 'Josefin Slab', serif;
+  text-transform: lowercase;
+  transition: all .2s ease-in-out;
+}
+
+#name:focus, #username:focus, #email:focus #password:focus {
+  border: 5px solid #F2D3C1;
+}
+
+#submit_button {
+  background: #F2D3C1;
+  box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: #F2D3C1;
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: .5rem 0;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+#submit_button:hover {
+  transform: scale(1.05);
+}

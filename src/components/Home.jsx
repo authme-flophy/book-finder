@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css'
 
 function Home() {
@@ -8,8 +9,8 @@ function Home() {
           </div>
           <div className="button_section">
               <div className="buttons">
-                <button className="button" id="check_shelves">CHECK SHELVES</button>
-                <button className="button" id="popular_books">POPULAR BOOKS</button>
+                <Link className="button" to="/books" >CHECK SHELVES</Link>
+                <Link className="button" to="/genres" >POPULAR BOOKS</Link>
               </div>
           </div>
         </div>
