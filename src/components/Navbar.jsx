@@ -10,7 +10,6 @@ const Navbar = () => {
             <Link className="link" to="/books">Book</Link>
             <Link className="link" to="/login">Login</Link>
             <Link className="link" to="/signup">Sign Up</Link>
-            <Link className="link" to="/genre">Genre</Link>
            
             </div>
         </nav>

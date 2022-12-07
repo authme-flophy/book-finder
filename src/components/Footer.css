@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
-.navbar {
+.footer {
   width: 100%;
+  background: #F2D3C1;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.4px);
+-webkit-backdrop-filter: blur(6.4px);
 }
 
 .links {
@@ -23,6 +27,7 @@
   font-weight: 700;
   font-size: 1.2rem;
   transition: all .2s ease-in-out;
+  padding: 1rem;
 }
 
 .link:hover {
