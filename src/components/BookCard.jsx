@@ -1,11 +1,5 @@
-import React, { useContext } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-import BookContext from "./BookContext";
 
-
-function BookCard({ bookImage, bookTitle, bookAuthor, bookCategory, book }) {
+function BookCard({ bookImage, bookPrice, bookAuthor, bookCategory, book }) {
     const { handleOnClickBook, handleDeleteBook, handleUpdateBook } =
       useContext(BookContext);
     return (
