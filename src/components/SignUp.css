@@ -25,7 +25,6 @@
   font-size: 1.2rem;
   outline: none;
   font-family: 'Josefin Slab', serif;
-  text-transform: lowercase;
   transition: all .2s ease-in-out;
 }
 
