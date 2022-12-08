@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
@@ -14,16 +14,28 @@ import Navbar from "./components/Navbar";
 function App() {
   // const title = 'Welcome';
   // const likes = 50;
+
+  const [user, setUser] = useState(null);
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar user={user} setUser={setUser} />
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/books" element={<Book />}>
-          <Route path="/books/:id" element={<BookCard />} />
+          <Route
+            path="/books/:id"
+            element={<BookCard user={user} setUser={setUser} />}
+          />
         </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route
+          path="/login"
+          element={<Login user={user} setUser={setUser} />}
+        />
+        <Route
+          path="/signup"
+          element={<SignUp user={user} setUser={setUser} />}
+        />
         <Route path="/genres" element={<Genre />} />
       </Routes>
       <Footer className="footer" />
