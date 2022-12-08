@@ -1,5 +1,6 @@
-/* .books{
-    /* display:block; */
-    /* box-sizing: border-box; */
-    /* align-self: center; */
-/* } */ 
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}

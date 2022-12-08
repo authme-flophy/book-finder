@@ -27,7 +27,7 @@ function Login({user, setUser}) {
 
       if (response.ok) {
         setUser(returnedData)
-        navigate("/")
+        navigate(-1)
       } else (
         setErrors(returnedData.errors)
       )
