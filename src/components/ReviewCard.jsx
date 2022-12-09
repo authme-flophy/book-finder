@@ -1,7 +1,9 @@
+import './ReviewCard.css'
+
 function ReviewCard({review}) {
   return ( 
     <div className="review">
-      <h3>{review.comment}</h3>
+      <p>{review.comment}</p>
     </div>
    );
 }

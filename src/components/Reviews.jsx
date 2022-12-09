@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./Reviews"
+import "./Reviews.css"
 import ReviewCard from "./ReviewCard";
 import Login from "./Login";
 
@@ -48,6 +48,7 @@ function Reviews({user, setUser}) {
 
     if (response.ok) {
       console.log(data);
+      e.target.parentElement.childNodes[1].value = ""
     } else (
       setErrors(returnedData.errors)
     )
@@ -63,10 +64,19 @@ function Reviews({user, setUser}) {
 
       <div className="book_details">
         <div className="book_info">
+          <img src={book.image_url} alt="this is a book image" />
           <h1>{ book.title }</h1>
           <h3>{ book.author }</h3>
           <p>{ book.likes } likes</p>
         </div>
+      </div>
+
+      <div className="review_form">
+        <form id="form">
+          <h3>Post a review</h3>
+          <input type="text" required name="comment" id="comment" onChange={e => setComment(e.target.value)} />
+          <button type="submit" onClick={e => handleSubmit(e)}>POST</button>
+        </form>
         <div className="book_reviews">
           {
             reviews.map( review => <ReviewCard review={review}/>)
@@ -74,15 +84,6 @@ function Reviews({user, setUser}) {
         </div>
       </div>
 
-      <div className="review_form">
-        <form id="form">
-          <input type="text" name="comment" id="comment" onChange={e => setComment(e.target.value)} />
-          <button type="submit" onClick={e => handleSubmit(e)}>POST</button>
-        </form>
-      </div>
-
-
-      <button onClick={e => navigate("/books")}>Back</button>
     </div>
    );
 }

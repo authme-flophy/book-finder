@@ -1,4 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&display=swap');
+
 .reviews {
   width: 100%;
   display: flex;
+  background-color: white;
+  padding: 2rem;
+}
+
+.review_form {
+  width: 70%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+#form > h3 {
+  color: #eac4ae;
+  font-size: 2rem;
+}
+
+#comment {
+  outline: none;
+  border: 3px solid #F2D3C1;
+  border-radius: 10px;
+  width: 50%;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+}
+
+#form > button {
+  outline: none;
+  border: 1px solid #F2D3C1;
+  padding: .5rem .5rem;
+  color: white;
+  background-color: #F2D3C1;
+  border-radius: 10px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.book_details {
+  width: 30%;
+  margin: 1rem;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+h3 {
+
 }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&display=swap');
+
+.review {
+  border: 1px solid #F2D3C1;
+  margin: .5rem 0;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 5px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
