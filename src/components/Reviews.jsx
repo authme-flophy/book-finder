@@ -32,6 +32,7 @@ function Reviews({user, setUser}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log(e.target.className)
     const data = {
       book_id: book.id,
       comment: comment
@@ -79,7 +80,7 @@ function Reviews({user, setUser}) {
         </form>
         <div className="book_reviews">
           {
-            reviews.map( review => <ReviewCard review={review}/>)
+            reviews.map( review => <ReviewCard review={review} user={user} setUser={setUser} />)
           }
         </div>
       </div>
